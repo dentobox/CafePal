@@ -20,7 +20,9 @@
     <!-- CSS Frameworks -->
     <link href="/css/normalize.css" rel="stylesheet">
     <link href="/css/milligram.min.css" rel="stylesheet">
+
     <!-- Icons -->
+    <link rel="stylesheet" <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Different styles -->
     <link href="/css/cafepal.css" rel="stylesheet">
@@ -35,30 +37,95 @@
   analytics.page();
   }}();
     </script>
+<!-- Hotjar Tracking Code for www.cafepal.co.kr -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1060540,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    <script>
+      var img = new Image();
+
+      img.onload = function() {
+        setTimeout(function() {
+          if (!$('.app-header-img').hasClass('zoom-in')) {
+            $('.app-header-img').css({ 'background-image': 'url(assets/img/main_01.jpg)' }).addClass('zoom-in');
+          }
+        }, 100);
+      };
+
+      img.src = '/assets/img/main.jpg';
+    </script>
+<!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '254647048580338'); fbq('track', 'PageView'); </script>
+    <noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id=254647048580338&ev=PageView &noscript=1"/>
+    </noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Start of Async ProveSource Code --><script>!function(o,i){window.provesrc&&window.console&&console.error&&console.error("ProveSource is included twice in this page."),provesrc=window.provesrc={dq:[],display:function(o,i){this.dq.push({n:o,g:i})}},o._provesrcAsyncInit=function(){provesrc.init({apiKey:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI1YmNlOGUyMjU2MzUxNTNhZjFkNzJkOWIiLCJpYXQiOjE1NDAyNjM0NTh9.PK72tMUodJ-SV13IXLi4c2NkSZzBjW3xmKxl-cq6EXQ",v:"0.0.3"})};var r=i.createElement("script");r.type="text/javascript",r.async=!0,r.charset="UTF-8",r.src="https://cdn.provesrc.com/provesrc.js";var e=i.getElementsByTagName("script")[0];e.parentNode.insertBefore(r,e)}(window,document);</script>
+<!-- End of Async ProveSource Code -->
+<script>
+window['_fs_debug'] = false;
+window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'FTYV2';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+  if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+  g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+  o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+  y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+  g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+  g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+  g.consent=function(a){g("consent",!arguments.length||a)};
+  g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+  g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+</script>
+<!-- Crisp Chat -->
+<script type="text/javascript"> window.$crisp=[];window.CRISP_WEBSITE_ID="e40c2de4-5981-47b9-b938-8c6a5de46acf";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+<!-- End of Crisp Chat -->
 </head>
 <body class="cafe-body">
-
+  <div class="world">
+    <div class="top-fixed">
+      <div id="logo" class="logo"><img src="/assets/img/logo.png" alt="카페팔"></div>
+      <a id="floating" href="javascript:" class="app-download" style="opacity:0"><img src="img/btn_down_app@2x.png" alt="카페팔앱 다운로드"></a>
+      <ul class="sns-list" style="display:none">
+        <li><a title="facebook" href="http://www.facebook.com/cafepalkorea" target="_blank"><img src="/assets/img/iconFacebook.png" alt="페이스북"></a></li>
+        <li><a title="instagram" href="http://www.instagram.com/cafepalkorea" target="_blank"><img src="/assets/img/iconInstagram.png" alt="인스타그램"></a></li>
+        <li><a title="naver blog" href="https://medium.com/cafepal" target="_blank"><img src="assets/img/iconMedium.png" alt="미디엄블로그"></a></li>
+      </ul>
+      <p id="icon-scroll" class="icon-scroll jump"><img src="/assets/img/iconScroll.png" alt="스크롤"></p>
     <header>
         <div class="logo">
             <h1 class="wow animated fadeIn">
-                <img src="/assets/img/iconsvg.svg" alt="CafePal">  
+                <img src="/assets/img/iconsvg.svg" alt="CafePal">
             </h1>
-            <a href="/index" class="wow animated fadeIn"><strong>KR</strong></a>
+            <a href="/index" class="wow animated fadeIn"><strong>COMPANY</strong></a>
         </div>
-        <nav>
+<!--        <nav>
             <ul class="wow animated fadeIn">
                 <li class="is-current"><a href="#hero" class="scroll">카페팔이 왔습니다!</a></li>
                 <li><a href="#cafeview" class="scroll">왜 카페팔인가?</a></li>
                 <li><a href="#cafeteam" class="scroll">만드는 사람들</a></li>
                 <li><a href="#footer" class="scroll"><i class="fa fa-question-circle"></i></a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
     <section id="hero">
-        <!--video id="video" autoplay muted loop style="display:none;">
-            <source src="imgs/lights.mp4" type="video/mp4">
-        </video-->
         <canvas id="world"></canvas>
         <div class="container">
             <div class="headline wow animated fadeIn">
@@ -70,18 +137,34 @@
                         Play</a>
                     <a href="https://itunes.apple.com/" target="_blank"><i class="fab fa-apple"></i>App
                         Store</a>
-                </div>      
+                </div>
             </div>
         </div>
     </section>
-
+    <!-- START OF AS SEEN ON -->
+    <section>
+      <div class="container asseen">
+        <div class="row text-center justify-content-center">
+            <div class="col mb-4">
+              진행 중:
+            </div>
+            <div class="w-100"></div>
+            <img src="/assets/img/asseenNaver.jpg">
+            <img src="/assets/img/asseenProducthunt.jpg">
+            <img src="/assets/img/asseenGitLab.jpg">
+            <img src="/assets/img/assenUsatoday.jpg">
+            <img src="/assets/img/asseenGithub.jpg">
+          </div>
+      </div>
+    </section>
+    <!-- END OF AS SEEN ON -->
     <section id="cafeview">
         <div class="container">
             <h2 class="wow animated fadeIn" data-wow-delay="0.3s">내 주변에 취향저격하는 카페를 찾아보자 <strong>편리한 카페팔</strong></h2>
             <ul class="wow animated fadeIn" data-wow-delay="0.6s">
                 <li data-cafeview-label="cafepal" class="current">
                     <h4>CafePal</h4>
-                    <p>모든 카페를 앱 하나로!<br /><strong>주문 커피앱, 카페팔. 반갑습니다!</strong></p>
+                    <p>모든 카페를 앱 하나로!<br /><strong>커피 주문앱, 카페팔. 반갑습니다!</strong></p>
                     <div class="screen wow animated bounceInUp" data-wow-delay="0.3s"><img src="/assets/img/login.png"></div>
                 </li>
                 <li data-cafeview-label="map">
@@ -111,8 +194,7 @@
                     <span class="thumb"><img src="/assets/img/dhan.png" class="png"></span>
                     <strong>Daniel Han</strong>
                     <em>Founder</em>
-                    <a href="https://www.linkedin.com/in/danielhan-0102/" title="링크드인 프로필 바로가기" target="_blank"><i
-                            class="fab fa-linkedin-in"><span>linkedin</span></i></a>
+                    <a href="https://www.linkedin.com/in/danielhan-0102/" title="링크드인 프로필 바로가기" target="_blank"><i class="fab fa-linkedin-in"><span>linkedin</span></i></a>
                 </div>
                 <div class="wow animated fadeIn" data-wow-delay="1.5s">
                     <span class="thumb"><img src="assets/img/lucky.jpg"></span>
@@ -123,6 +205,7 @@
                     <span class="thumb hiring"><i class="fas fa-bullhorn"></i></span>
                     <strong>Currently hiring</strong>
                     <em>상시채용중</em>
+                    <a href="https://www.linkedin.com/in/danielhan-0102/" title="링크드인 프로필 바로가기" target="_blank"><i class="fab fa-linkedin-in"><span>linkedin</span></i></a>
                 </div>
             </div>
         </div>
@@ -136,7 +219,31 @@
             });
           }
      </script>
+     <!-- end locations section -->
 
+ <!-- begin newsletter section -->
+       <section class="newsletter" id="newsletter">
+         <div class="container">
+
+           <div class="row">
+             <div class="col-md-12">
+               <div class="section-head">
+                 <h1>카페 사장님이세요?</h1>
+                 <p>카페팔 네트워크에 들어오세요!</p>
+                 <span class="underline"></span>
+               </div>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="col-sm-12 form">
+               <div id="newsletter-container">
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+       <!-- end newsletter section -->
     <footer id="footer">
         <div class="container">
             <div class="row">
@@ -145,7 +252,6 @@
                         <h5>카페팔 컴퍼니</h5>
                     </li>
                     <li>주소 : 서울시 강남구 삼성동 157길 11 </li>
-                    <li>사업자 등록번호 : 000-00-00000</li>
                 </ul>
                 <ul class="column column-25">
                     <li>
@@ -159,8 +265,7 @@
                     <li>
                         <h5>고객센터</h5>
                     </li>
-                    <li>이메일 : <a href="mailto:cafepalkorea@gmail.com" target="_blank">cafepalkorea@gmail.com</a></li>
-                    <li>텔레그램 : <a href="https://t.me/cafepal">@cafepal</a></li>
+                    <li>이메일 : <a href="mailto:cafepalkorea@gmail.com" target="_blank">hello@cafepal.co.kr</a></li>
                     <li>인스타그램(EN) : <a href="https://instagram.com/cafepalkorea">@cafepalkorea</a></li>
                 </ul>
             </div>
@@ -180,22 +285,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5D6VF6T');</script>
-<!-- End Google Tag Manager -->
-
-    <a href="https://t.me/cafepal" target="_blank" class="btn-float" title="텔레그램으로 문의하기"><i class="fab fa-telegram-plane"></i></a>
-
-<!-- naver analytics -->
-  <script>
-    var map = new naver.maps.Map('map', {
-   center: new naver.maps.LatLng(37.3595704, 127.105399),
-   zoom: 10
-});
-
-var marker = new naver.maps.Marker({
-   position: new naver.maps.LatLng(37.3595704, 127.105399),
-   map: map
-});
-     </script>
+  <!-- End Google Tag Manager -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126812295-2"></script>
   <script>
@@ -205,10 +295,29 @@ var marker = new naver.maps.Marker({
 
     gtag('config', 'UA-126812295-2');
   </script>
+  <!-- Naver Analytics -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "b0f2402adc0b10";
+wcs_do();
+</script>
+  <!-- naver maps -->
+  <script>
+      var map = new naver.maps.Map('map', {
+     center: new naver.maps.LatLng(37.3595704, 127.105399),
+     zoom: 10
+  });
 
+  var marker = new naver.maps.Marker({
+     position: new naver.maps.LatLng(37.3595704, 127.105399),
+     map: map
+  });
+  </script>
     <!-- jquery and necessary plugins -->
   <script src="/js/jquery.js"></script>
   <script src="/js/wow.js"></script>
+  <script src="/js/popper.js></script>
 
     <!-- main scripts -->
   <script src="/js/space.js"></script>
