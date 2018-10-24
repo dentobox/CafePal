@@ -385,8 +385,29 @@ section .page-next:hover {
   box-shadow: 0 1px 48px rgba(255, 255, 255, 0.5);
 }
 #hero:after {
-  background-image: url(../../imgs/bg_1.png);
+  background-image: url(../assets/img/main.png);
 }
+
+.asseen {
+  margin-bottom:160px;margin-top:-120px;
+  position:relative;z-index:10}
+.asseen img {
+  display:inline-block;
+  text-align:center;
+  max-height:30px;
+  margin:15px 20px;
+  opacity:0.6}
+.asseen {
+  margin-top:-80px}
+.asseen img {
+  max-height:24px;margin:15px 20px}
+.asseen {
+  margin-top:-20px}
+.asseen img {
+  max-height:24px;margin:15px 20px}
+.asseen {
+  margin-top:-210px}
+.asseen{margin-top:40px}
 
 #cafeview {
   background: #F7A64A;
@@ -484,28 +505,16 @@ section .page-next:hover {
   box-shadow: 0 0 32px rgba(17, 31, 73, 0.2);
 }
 #cafeteam .teams > div .thumb {
-  width: 176px;
-  height: 176px;
-  background: #F7A64A;
-  color: #FFF;
-  font-size: 48px;
-  line-height: 176px;
-  /* display: block;
+  display: block;
   margin: 0 auto 10px;
-  overflow: hidden; */
+  overflow: hidden;
 }
 #cafeteam .teams > div .thumb img {
-  width: 176px;
-  height: 176px;
-  background: #F7A64A;
-  color: #FFF;
-  font-size: 48px;
-  line-height: 176px;
-  /* display: block;
+  display: block;
   min-height: 100%;
   -webkit-filter: grayscale(100%);
-  Safari 6.0 - 9.0 
-  filter: grayscale(100%); */
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 #cafeteam .teams > div .thumb.hiring {
   width: 176px;
@@ -553,7 +562,7 @@ section .page-next:hover {
 }
 
 #security {
-  background: #F7A64A;
+  background: #EA8C55;
 }
 #security ul {
   margin: 0 auto;
@@ -806,6 +815,25 @@ footer .copyright a {
 }
 
 @media (max-width: 1280px) {
+      .world {
+        overflow: hidden; }
+      .world .top-fixed .sns-list {
+        display: block !important;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+        width: 50%;
+        text-align: right; }
+      .world .top-fixed .sns-list li {
+        display: inline-block;
+        width: 10%;
+        text-align: center;
+        vertical-align: middle;
+        margin-right: 0; }
+      .world .top-fixed .sns-list li:first-child {
+        margin-right: -5px; }
+      .world .icon-scroll {
+          left: 50%; }
   #hero .headline {
     padding: 10px 25px;
   }
@@ -899,6 +927,22 @@ footer .copyright a {
 #cafeteam {
     display: none;
   }
+
+.newsletter{
+  background-image:url(https://cdn.cupsapp.com/website/images/newsletter_bg.jpg);
+  background-attachment:fixed;background-size:cover}
+.newsletter .section-head{
+  color:#fff}
+.newsletter .form .form-field{height:62px}
+.newsletter .form .form-field,.newsletter .form .form-textarea{
+  width:100%;padding:20px;background:none;color:#fff;border-radius:3px;line-height:normal;margin:10px 0}
+.newsletter .form .form-textarea-limit{
+  color:#fff}
+.newsletter .form .btn{
+  height:62px;width:100%;padding:20px;border-radius:3px;line-height:normal}
+@media only screen and (min-width:769px) and (max-width:991px){
+  .newsletter .form .btn{width:auto}}
+.newsletter #message,.newsletter #success_page p{color:#fff;font-size:18px}.newsletter .btn span{padding-right:10px}.newsletter .action-col{text-align:center}.newsletter .action-col .btn-send{margin:10px auto}@media only screen and (min-width:769px) and (max-width:991px){.newsletter .action-col .btn-send{width:100%}}.newsletter .btn-send{height:62px;margin:0 0 0 5px;vertical-align:top;padding-right:0;border-color:#f7a64a}.newsletter .btn-send:focus,.newsletter .btn-send:hover{color:#fff;background-color:#f7a64a}.newsletter .btn-send i{padding-right:10px;padding-left:10px}.brief-content{max-width:500px}.brief-content h1{line-height:1.3em}.brief-content
 
   #partners .partners {
     margin: 0 auto;
